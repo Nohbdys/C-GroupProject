@@ -1,4 +1,8 @@
 
+
+// Remember to add the line in input:
+// Rightclick solution - properties - linker - input - additional dependencies- "glfw3.lib;opengl32.lib;irrKlang.lib;" < should be added in the beginning. in front of kernel32.lib
+
 #include <GLFW\glfw3.h>
 
 #include <iostream>
@@ -70,7 +74,8 @@ int main()
 		}
 	}
 
-
+
+
 	glfwTerminate();
 	return 0;
 
