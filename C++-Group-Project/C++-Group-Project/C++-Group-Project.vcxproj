@@ -118,6 +118,7 @@
     <ClInclude Include="..\irrKlangTest\CWaves.h" />
     <ClInclude Include="..\irrKlangTest\Framework.h" />
     <ClInclude Include="..\irrKlangTest\LoadOAL.h" />
+    <ClInclude Include="Background.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameWorld.h" />
     <ClInclude Include="Hats.h" />
@@ -130,6 +131,7 @@
     <ClCompile Include="..\irrKlangTest\CWaves.cpp" />
     <ClCompile Include="..\irrKlangTest\Framework.cpp" />
     <ClCompile Include="..\irrKlangTest\LoadOAL.cpp" />
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameWorld.cpp" />
     <ClCompile Include="Hats.cpp" />

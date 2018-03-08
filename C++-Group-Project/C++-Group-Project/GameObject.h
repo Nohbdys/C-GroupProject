@@ -11,9 +11,9 @@ protected:
 	float x;
 	float y;
 	float z;
+	float texSize;
 public:
-	GameObject();
-	GameObject(float initX, float initY, float initZ, char * texture);
+	GameObject(float initX, float initY, float initZ, float size, char * texture);
 	~GameObject();
 	void virtual Update();
 	void virtual Render();

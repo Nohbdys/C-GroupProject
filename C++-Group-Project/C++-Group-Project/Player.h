@@ -6,17 +6,22 @@ class Player : public GameObject
 {
 private:
 	char textureChar[24];
-	float playx;
-	float playy;
-	float playz;
 
+	bool hatPickedUp = true;
 	bool horizontalPressed;
 	bool verticalPressed;
+	int counter = 0;
 
+	
 public:
 	void Update();
-	Player(float initX, float initY, float initZ, char * texture);
+	void Jump();
+	
+	Player(float initX, float initY, float initZ, float size, char * texture);
 	~Player();
+
+	bool jump = false;
+	bool jumped;
 
 };
 

@@ -4,16 +4,13 @@
 using namespace std;
 
 
-GameObject::GameObject() : GameObject(0, 0, 0, textureChar)
-{
-}
 
-GameObject::GameObject(float initX, float initY, float initZ, char * texture)
+GameObject::GameObject(float initX, float initY, float initZ, float size, char * texture)
 {
 	x = initX;
 	y = initY;
 	z = initZ;
-	
+	texSize = size / 100;
 	xDirection = 1;
 	yDirection = 1;
 	this->texture = SOIL_load_OGL_texture(texture, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y); //Indlæser teksturen og returnere et id
@@ -38,10 +35,10 @@ void GameObject::Render()
 	glBindTexture(GL_TEXTURE_2D, texture); //Binder teksturen (Anvender til ved rendering af vertices)
 	glBegin(GL_QUADS);
 	// Front Face
-	glTexCoord2f(0.0f, 0.0f); glVertex3f(-1.0f, -1.0f, 1.0f);
-	glTexCoord2f(1.0f, 0.0f); glVertex3f(1.0f, -1.0f, 1.0f);
-	glTexCoord2f(1.0f, 1.0f); glVertex3f(1.0f, 1.0f, 1.0f);
-	glTexCoord2f(0.0f, 1.0f); glVertex3f(-1.0f, 1.0f, 1.0f);
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(-texSize, -texSize, 1.0f);
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(texSize, -texSize, 1.0f);
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(texSize, texSize, 1.0f);
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(-texSize, texSize, 1.0f);
 	glEnd();
 	glPopMatrix(); // Fjerner matrisen på stakken (dvs. nulstiller til udgangspunkt)
 

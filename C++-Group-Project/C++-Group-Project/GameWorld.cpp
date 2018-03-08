@@ -1,5 +1,8 @@
 #include "GameWorld.h"
 #include <conio.h>
+#include <list>
+#include <iostream>
+using namespace std;
 
 char soundToBePlayed[12] = "Bye456.wav\0";
 
@@ -7,15 +10,18 @@ GameWorld::GameWorld(GLFWwindow * windowContext)
 {
 	window = windowContext;
 
-//	tmpGO = new GameObject();
+ 	//tmpGO = new GameObject(0, 0, 0, "..\\Images/BGround.png\0");
 	tmpSC = new SoundController();
-	player = new Player(0, 0, 0, "..\\Images/BGround.png\0");
+	player = new Player(1, 0, 0,5, "..\\Images/Child67.png\0");
+	background = new Background(0, 0, 0,100, "..\\Images/BGround.png\0");
 
 	glEnable(GL_TEXTURE_2D); //Aktivere tektur mapning
 							 //Specificere hvorledes tekture interpoliseres over overflader
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	tmpSC->Initial(soundToBePlayed);
+
+
 }
 
 
@@ -40,6 +46,7 @@ void GameWorld::GameLogic()
 {
 
 	player->Update();
+	
 	tmpSC->PlaySound();
 
 	int upState = glfwGetKey(window, GLFW_KEY_UP);
@@ -53,37 +60,30 @@ void GameWorld::GameLogic()
 		glfwSetWindowShouldClose(window, true);
 	}
 
+	player->yDirection = 0;
+	player->xDirection = 0;
+
 	if (leftState == GLFW_PRESS)
 	{
-	//	player->xDirection = -1; // Gå til venstre
-		(*player).yDirection = -1;
-		player->Update();
-		
+		player->xDirection = -1; // Gå til venstre
 	}
 
 	if (rightState == GLFW_PRESS)
 	{
 		player->xDirection = 1; // Gå til højre
-		
-		player->Update();
 	}
 
 	if (upState == GLFW_PRESS)
 	{
+		player->jump = true;
 		player->yDirection = 1; // Gå op
-	
-		player->Update();
-
 	}
 
 	if (downState == GLFW_PRESS)
 	{
 		player->yDirection = -1; // Gå ned
-		
-		player->Update();
 	}
-	player->yDirection = 0;
-	player->xDirection = 0;
+
 
 }
 
@@ -94,6 +94,7 @@ void GameWorld::Render()
 
 	glLoadIdentity(); //Null stiller OpenGL matrise
 
+	background->Render();
 	player->Render();
 
 	glfwSwapBuffers(window);
