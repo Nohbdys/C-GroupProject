@@ -15,6 +15,9 @@ public:
 	~GameObject();
 	void virtual Update();
 	void virtual Render();
-	int direction;
+	int xDirection;
+	int yDirection;
+	bool horizontalPressed;
+	bool verticalPressed;
 };
 

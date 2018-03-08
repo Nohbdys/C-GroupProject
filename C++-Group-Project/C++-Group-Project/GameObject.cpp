@@ -13,19 +13,29 @@ GameObject::GameObject(float initX, float initY, float initZ)
 	x = initX;
 	y = initY;
 	z = initZ;
-	direction = 1;
-	texture = SOIL_load_OGL_texture(".\\Images/PokeBall.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y); //Indlæser teksturen og returnere et id
+	xDirection = 1;
+	yDirection = 1;
+	texture = SOIL_load_OGL_texture("..\\Images/background.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y); //Indlæser teksturen og returnere et id
 	glBindTexture(GL_TEXTURE_2D, texture); //Binder teksturen (dvs. indlæser den i GPU hukommelsen)
 }
 
 GameObject::~GameObject()
 {
-}
 
+}
 
 void GameObject::Update()
 {
-	x += direction * 0.001;
+	if (horizontalPressed)
+	{
+		x += xDirection * 0.001;
+		horizontalPressed = false;
+	}
+	if (verticalPressed)
+	{
+		y += yDirection * 0.001;
+		verticalPressed = false;
+	}
 }
 
 void GameObject::Render()
