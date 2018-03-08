@@ -1,14 +1,5 @@
-﻿  SoundController.cpp
-  Program.cpp
-  GameWorld.cpp
+﻿  GameWorld.cpp
   GameObject.cpp
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\gameobject.cpp(31): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\gameobject.cpp(36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  LoadOAL.cpp
-  Framework.cpp
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\irrklangtest\framework.cpp(109): warning C4101: 'i': unreferenced local variable
-  CWaves.cpp
-  aldlist.cpp
   Generating Code...
   soil.lib(SOIL.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification

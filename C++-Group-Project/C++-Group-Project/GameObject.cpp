@@ -1,41 +1,34 @@
 #include "GameObject.h"
 #include <SOIL.h>
-
+#include <iostream>
 using namespace std;
 
 
-GameObject::GameObject() : GameObject(0, 0, 0)
+GameObject::GameObject() : GameObject(0, 0, 0, textureChar)
 {
 }
 
-GameObject::GameObject(float initX, float initY, float initZ)
+GameObject::GameObject(float initX, float initY, float initZ, char * texture)
 {
 	x = initX;
 	y = initY;
 	z = initZ;
+	
 	xDirection = 1;
 	yDirection = 1;
-	texture = SOIL_load_OGL_texture("..\\Images/background.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y); //Indlæser teksturen og returnere et id
-	glBindTexture(GL_TEXTURE_2D, texture); //Binder teksturen (dvs. indlæser den i GPU hukommelsen)
+	this->texture = SOIL_load_OGL_texture(texture, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y); //Indlæser teksturen og returnere et id
+	
+	glBindTexture(GL_TEXTURE_2D, this->texture); //Binder teksturen (dvs. indlæser den i GPU hukommelsen)
 }
 
 GameObject::~GameObject()
 {
-
+	
 }
 
 void GameObject::Update()
 {
-	if (horizontalPressed)
-	{
-		x += xDirection * 0.001;
-		horizontalPressed = false;
-	}
-	if (verticalPressed)
-	{
-		y += yDirection * 0.001;
-		verticalPressed = false;
-	}
+
 }
 
 void GameObject::Render()
