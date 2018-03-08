@@ -8,7 +8,7 @@ using namespace std;
 #define NUMBUFFERS              (4)
 #define	SERVICE_UPDATE_PERIOD	(20)
 
-#define	TEST_WAVE_FILE		"Bye456.wav"
+#define	TEST_WAVE_FILE		"Music6.wav"
 
 int main()
 {

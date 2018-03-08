@@ -1,8 +1,2 @@
-﻿  LoadOAL.cpp
-  irrKlangs.cpp
-  Framework.cpp
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\irrklangtest\framework.cpp(109): warning C4101: 'i': unreferenced local variable
-  CWaves.cpp
-  aldlist.cpp
-  Generating Code...
+﻿  irrKlangs.cpp
   irrKlangTest.vcxproj -> C:\Users\Oliver\Desktop\C++\C++GroupProject\C-GroupProject\C++-Group-Project\Debug\irrKlangTest.exe

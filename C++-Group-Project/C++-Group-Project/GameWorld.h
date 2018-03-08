@@ -6,7 +6,7 @@
 #include "SoundController.h"
 #include "Player.h"
 #include "Background.h"
-
+#include "Platform.h";
 
 class GameWorld
 {
@@ -16,6 +16,11 @@ private:
 	SoundController * tmpSC; 
 	Player * player;
 	Background * background;
+	Platform * platform1;
+	Platform * platform2;
+	Platform * platform3;
+	Platform * platform4;
+	Platform * platform5;
 
 
 public:

@@ -2,9 +2,12 @@
 #include <conio.h>
 #include <list>
 #include <iostream>
+#include <vector>
 using namespace std;
 
-char soundToBePlayed[12] = "Bye456.wav\0";
+char soundToBePlayed[12] = "Music5.wav\0";
+
+vector<Platform> platformList;
 
 GameWorld::GameWorld(GLFWwindow * windowContext)
 {
@@ -14,13 +17,25 @@ GameWorld::GameWorld(GLFWwindow * windowContext)
 	tmpSC = new SoundController();
 	player = new Player(1, 0, 0,5, "..\\Images/Child67.png\0");
 	background = new Background(0, 0, 0,100, "..\\Images/BGround.png\0");
+	platform1 = new Platform(-0.8, -0.8, 0, 15, "..\\Images/Platfor.png\0");
+	platform2 = new Platform(-0.4, -0.8, 0, 15, "..\\Images/Platfor.png\0");
+	platform3 = new Platform(0, -0.8, 0, 15, "..\\Images/Platfor.png\0");
+	platform4 = new Platform(0.4, -0.8, 0, 15, "..\\Images/Platfor.png\0");
+	platform5 = new Platform(0.8, -0.8, 0, 15, "..\\Images/Platfor.png\0");
+
 
 	glEnable(GL_TEXTURE_2D); //Aktivere tektur mapning
 							 //Specificere hvorledes tekture interpoliseres over overflader
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	tmpSC->Initial(soundToBePlayed);
+	
 
+	platformList.push_back(*platform1);
+	platformList.push_back(*platform2);
+	platformList.push_back(*platform3);
+	platformList.push_back(*platform4);
+	platformList.push_back(*platform5);
 
 }
 
@@ -44,6 +59,8 @@ void GameWorld::GameLoop()
 
 void GameWorld::GameLogic()
 {
+
+
 
 	player->Update();
 	
@@ -95,6 +112,14 @@ void GameWorld::Render()
 	glLoadIdentity(); //Null stiller OpenGL matrise
 
 	background->Render();
+	vector<Platform>::iterator it;
+	for (it = platformList.begin(); it != platformList.end(); ++it) 
+	{
+		it->Render();
+	}
+
+
+
 	player->Render();
 
 	glfwSwapBuffers(window);

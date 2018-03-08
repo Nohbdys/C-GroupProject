@@ -37,8 +37,8 @@ void SoundController::Initial(char * soundNum)
 	{
 		ALFWprintf("Failed to initialize OpenAL\n");
 		ALFWShutdown();
-
 	}
+
 	// Generate an AL Buffer
 	alGenBuffers(1, &uiBuffer);
 

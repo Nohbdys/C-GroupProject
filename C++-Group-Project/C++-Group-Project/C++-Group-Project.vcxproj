@@ -123,6 +123,7 @@
     <ClInclude Include="GameWorld.h" />
     <ClInclude Include="Hats.h" />
     <ClInclude Include="Npc.h" />
+    <ClInclude Include="Platform.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SoundController.h" />
   </ItemGroup>
@@ -136,6 +137,7 @@
     <ClCompile Include="GameWorld.cpp" />
     <ClCompile Include="Hats.cpp" />
     <ClCompile Include="Npc.cpp" />
+    <ClCompile Include="Platform.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="SoundController.cpp" />
