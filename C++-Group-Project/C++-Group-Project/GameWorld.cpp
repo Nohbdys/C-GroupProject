@@ -1,17 +1,18 @@
 #include "GameWorld.h"
 
-
+char soundToBePlayed[12] = "Bye456.wav\0";
 
 GameWorld::GameWorld(GLFWwindow * windowContext)
 {
 	window = windowContext;
 	tmpGO = new GameObject();
+	tmpSC = new SoundController();
 
 	glEnable(GL_TEXTURE_2D); //Aktivere tektur mapning
 							 //Specificere hvorledes tekture interpoliseres over overflader
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
+	tmpSC->Initial(soundToBePlayed);
 }
 
 
@@ -19,6 +20,7 @@ GameWorld::~GameWorld()
 {
 	//Husk at ryde op
 	delete tmpGO;
+	delete tmpSC;
 }
 
 
@@ -26,16 +28,15 @@ void GameWorld::GameLoop()
 {
 	GameLogic();
 	Render();
+	
 	glfwPollEvents();
 }
 
 void GameWorld::GameLogic()
 {
 
-
 	tmpGO->Update();
-
-
+	tmpSC->PlaySound();
 
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) //Tjekker op på at ESC er trykket ned, hvis ja luk vinduet
 	{
@@ -51,7 +52,6 @@ void GameWorld::GameLogic()
 		tmpGO->direction = 1; // Gå til højre
 	}
 
-
 }
 
 void GameWorld::Render()
@@ -66,3 +66,4 @@ void GameWorld::Render()
 	glfwSwapBuffers(window);
 
 }
+

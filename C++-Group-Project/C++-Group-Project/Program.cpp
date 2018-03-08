@@ -1,11 +1,15 @@
 
 #include <GLFW\glfw3.h>
+#include <al.h>
+#include <alc.h>
 
 #include <iostream>
 #include "GameWorld.h"
-
+#include "SoundController.h"
+using namespace std;
 
 GameWorld * gw;
+
 
 void size_resize_callback(GLFWwindow* window, int width, int height)
 {
@@ -24,6 +28,7 @@ int main()
 	{
 		std::cout << "Kunne ikke oprette OpenGL Vindue" << std::endl;
 		glfwTerminate();
+		
 		return -1;
 	}
 	glfwMakeContextCurrent(window); //Sørger for at OpenGL Bruger vinduet som renderings context
@@ -39,9 +44,10 @@ int main()
 	while (!glfwWindowShouldClose(window)) // Køre så længe glfw vinduet ikke har fået besked på at lukke (f.eks. tryk på X knappen)
 	{
 		gw->GameLoop();
-
-
+		
 	}
 	glfwTerminate(); //Lukker evt. åbnede vinduer og frigiver resurse brugt her til
+	
+
 	return 0;
 }

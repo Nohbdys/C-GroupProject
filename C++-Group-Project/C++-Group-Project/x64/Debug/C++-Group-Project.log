@@ -1,0 +1,32 @@
+﻿  Program.cpp
+  GameWorld.cpp
+  GameObject.cpp
+c:\users\oliver\desktop\c++\c-groupproject\c++-group-project\c++-group-project\gameobject.cpp(27): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glBegin referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glBindTexture referenced in function "public: __cdecl GameObject::GameObject(float,float,float)" (??0GameObject@@QEAA@MMM@Z)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glEnd referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glPopMatrix referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glPushMatrix referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glTexCoord2f referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glTranslatef referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glVertex3f referenced in function "public: virtual void __cdecl GameObject::Render(void)" (?Render@GameObject@@UEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol SOIL_load_OGL_texture referenced in function "public: __cdecl GameObject::GameObject(float,float,float)" (??0GameObject@@QEAA@MMM@Z)
+GameWorld.obj : error LNK2019: unresolved external symbol __imp_glClear referenced in function "private: void __cdecl GameWorld::Render(void)" (?Render@GameWorld@@AEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol __imp_glClearColor referenced in function "private: void __cdecl GameWorld::Render(void)" (?Render@GameWorld@@AEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol __imp_glEnable referenced in function "public: __cdecl GameWorld::GameWorld(struct GLFWwindow *)" (??0GameWorld@@QEAA@PEAUGLFWwindow@@@Z)
+GameWorld.obj : error LNK2019: unresolved external symbol __imp_glLoadIdentity referenced in function "private: void __cdecl GameWorld::Render(void)" (?Render@GameWorld@@AEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol __imp_glTexParameteri referenced in function "public: __cdecl GameWorld::GameWorld(struct GLFWwindow *)" (??0GameWorld@@QEAA@PEAUGLFWwindow@@@Z)
+GameWorld.obj : error LNK2019: unresolved external symbol glfwSetWindowShouldClose referenced in function "private: void __cdecl GameWorld::GameLogic(void)" (?GameLogic@GameWorld@@AEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function "public: void __cdecl GameWorld::GameLoop(void)" (?GameLoop@GameWorld@@QEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol glfwGetKey referenced in function "private: void __cdecl GameWorld::GameLogic(void)" (?GameLogic@GameWorld@@AEAAXXZ)
+GameWorld.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function "private: void __cdecl GameWorld::Render(void)" (?Render@GameWorld@@AEAAXXZ)
+Program.obj : error LNK2019: unresolved external symbol __imp_glViewport referenced in function "void __cdecl size_resize_callback(struct GLFWwindow *,int,int)" (?size_resize_callback@@YAXPEAUGLFWwindow@@HH@Z)
+Program.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwSetFramebufferSizeCallback referenced in function main
+Program.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+C:\Users\Oliver\Desktop\C++\C-GroupProject\C++-Group-Project\x64\Debug\C++-Group-Project.exe : fatal error LNK1120: 26 unresolved externals

@@ -1,0 +1,4 @@
+﻿irrKlangs.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) class irrklang::ISoundEngine * __cdecl irrklang::createIrrKlangDevice(enum irrklang::E_SOUND_OUTPUT_DRIVER,int,char const *,char const *)" (__imp_?createIrrKlangDevice@irrklang@@YAPEAVISoundEngine@1@W4E_SOUND_OUTPUT_DRIVER@1@HPEBD1@Z) referenced in function main
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\lib\x64\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\lib\x64\irrKlang.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Oliver\Desktop\C++\C-GroupProject\C++-Group-Project\x64\Debug\irrKlangTest.exe : fatal error LNK1120: 1 unresolved externals

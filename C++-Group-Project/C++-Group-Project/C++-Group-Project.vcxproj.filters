@@ -13,12 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{8901f660-705b-4917-8969-361c9d113f7b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlangTest\aldlist.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlangTest\CWaves.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlangTest\Framework.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlangTest\LoadOAL.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -30,6 +48,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\irrKlangTest\aldlist.cpp">
+      <Filter>Header Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\irrKlangTest\CWaves.cpp">
+      <Filter>Header Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\irrKlangTest\Framework.cpp">
+      <Filter>Header Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\irrKlangTest\LoadOAL.cpp">
+      <Filter>Header Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

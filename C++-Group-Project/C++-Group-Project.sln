@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++-Group-Project", "C++-Group-Project\C++-Group-Project.vcxproj", "{5310D24B-DCA1-4EE8-A045-CE48A10C1738}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "irrKlangTest", "irrKlangTest\irrKlangTest.vcxproj", "{2F79BE97-0630-4337-B8F2-839494312111}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{5310D24B-DCA1-4EE8-A045-CE48A10C1738}.Release|x64.Build.0 = Release|x64
 		{5310D24B-DCA1-4EE8-A045-CE48A10C1738}.Release|x86.ActiveCfg = Release|Win32
 		{5310D24B-DCA1-4EE8-A045-CE48A10C1738}.Release|x86.Build.0 = Release|Win32
+		{2F79BE97-0630-4337-B8F2-839494312111}.Debug|x64.ActiveCfg = Debug|x64
+		{2F79BE97-0630-4337-B8F2-839494312111}.Debug|x64.Build.0 = Debug|x64
+		{2F79BE97-0630-4337-B8F2-839494312111}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F79BE97-0630-4337-B8F2-839494312111}.Debug|x86.Build.0 = Debug|Win32
+		{2F79BE97-0630-4337-B8F2-839494312111}.Release|x64.ActiveCfg = Release|x64
+		{2F79BE97-0630-4337-B8F2-839494312111}.Release|x64.Build.0 = Release|x64
+		{2F79BE97-0630-4337-B8F2-839494312111}.Release|x86.ActiveCfg = Release|Win32
+		{2F79BE97-0630-4337-B8F2-839494312111}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
