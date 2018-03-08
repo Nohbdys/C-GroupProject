@@ -120,6 +120,9 @@
     <ClInclude Include="..\irrKlangTest\LoadOAL.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="Hats.h" />
+    <ClInclude Include="Npc.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SoundController.h" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +132,9 @@
     <ClCompile Include="..\irrKlangTest\LoadOAL.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="Hats.cpp" />
+    <ClCompile Include="Npc.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="SoundController.cpp" />
   </ItemGroup>
