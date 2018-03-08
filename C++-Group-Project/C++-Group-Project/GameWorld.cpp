@@ -46,6 +46,13 @@ GameWorld::~GameWorld()
 	delete tmpGO;
 	delete tmpSC;
 	delete player;
+	delete background;
+
+	delete platform1;
+	delete platform2;
+	delete platform3;
+	delete platform4;
+	delete platform5;
 }
 
 
@@ -59,8 +66,6 @@ void GameWorld::GameLoop()
 
 void GameWorld::GameLogic()
 {
-
-
 
 	player->Update();
 	
