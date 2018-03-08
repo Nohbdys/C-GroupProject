@@ -54,7 +54,9 @@ void Player::Update()
 		y += 0.002;
 		jumped = false;
 	}
-	y -= 0.002;
+
+	y -= 0.002;		//Gravity
+
 	if (jump &&jumped)
 	{
 		Jump();

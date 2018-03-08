@@ -1,15 +1,1 @@
-﻿  Player.cpp
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(32): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(36): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(44): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(50): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(54): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(57): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\oliver\desktop\c++\c++groupproject\c-groupproject\c++-group-project\c++-group-project\player.cpp(72): warning C4305: '+=': truncation from 'double' to 'float'
-  soil.lib(SOIL.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  Generating code
-  Finished generating code
-  C++-Group-Project.vcxproj -> C:\Users\Oliver\Desktop\C++\C++GroupProject\C-GroupProject\C++-Group-Project\Debug\C++-Group-Project.exe
+﻿  C++-Group-Project.vcxproj -> C:\Users\SifLerudVedelStamp\Documents\ea dania\4. Semester\02 - C++\Project\C-GroupProject\C++-Group-Project\Debug\C++-Group-Project.exe
