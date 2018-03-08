@@ -1,8 +1,15 @@
 #pragma once
-class Hats
+
+#include "Player.h"
+
+class Hats : public Player
 {
+
+private:
+	char textureChar[24];
+
 public:
-	Hats();
+	Hats(float initX, float initY, float initZ, float size, char * texture);
 	~Hats();
 };
 

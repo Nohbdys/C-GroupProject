@@ -37,7 +37,7 @@ void Player::Update()
 		}
 	}
 
-	if (y <= 1 && y >= -0.699)
+	if (y <= 1 && y >= -0.950)
 	{
 		//updates player direction on the y value
 
@@ -55,8 +55,7 @@ void Player::Update()
 		jumped = false;
 	}
 
-	//Simulates gravity
-	y -= 0.002;
+	y -= 0.002;		//Gravity
 
 	if (jump &&jumped)
 	{
